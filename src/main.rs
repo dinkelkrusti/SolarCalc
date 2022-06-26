@@ -1,4 +1,4 @@
-mod stat;
+mod math;
 mod optim;
 mod ui;
 mod plot;
