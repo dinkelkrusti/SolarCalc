@@ -7,11 +7,11 @@ pub fn mean(input: Vec<f64>) -> f64 {
     }
 
     let result = result/len;
-    return(result);
+    return result;
 }
 
 pub fn standard_deviation(input: Vec<f64>) -> f64 {
-    let mean = self::mean(input);
+    let mean= self::mean(input.clone());
     let mut variance: f64 = 0f64;
 
     for e in input {
