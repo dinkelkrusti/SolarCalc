@@ -2,7 +2,7 @@ mod math;
 mod optim;
 mod ui;
 mod plot;
-mod simulation;
+mod physics;
 
 fn main(){
 
