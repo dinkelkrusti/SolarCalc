@@ -1,5 +1,3 @@
-use std::io;
+fn main(){
 
-fn main() {
-    println!("test lol")
 }
