@@ -5,6 +5,7 @@ pub struct PointS2 {
 }
 
 
+#[derive(Clone, Copy)]
 pub struct PointR3 {
     pub x: f64,
     pub y: f64,
@@ -22,4 +23,12 @@ pub fn s2_to_r3(p: PointS2) -> PointR3 {
     let z: f64 = p.theta.cos();
 
     return PointR3 { x, y, z }
+}
+
+pub fn scalar_product(v_1: PointR3, v_2: PointR3) -> f64 {
+    return v_1.x* v_2.x + v_1.y* v_2.y + v_1.z* v_2.z;
+}
+
+pub fn angle(v_1: PointR3, v_2: PointR3) -> f64 {
+    return (scalar_product(v_1, v_2).abs()/(abs(v_1) * abs(v_2))).acos();
 }
