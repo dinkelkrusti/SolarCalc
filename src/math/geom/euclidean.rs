@@ -26,7 +26,7 @@ pub fn s2_to_r3(p: PointS2) -> PointR3 {
 }
 
 pub fn scalar_product(v_1: PointR3, v_2: PointR3) -> f64 {
-    return v_1.x* v_2.x + v_1.y* v_2.y + v_1.z* v_2.z;
+    return v_1.x*v_2.x + v_1.y*v_2.y + v_1.z*v_2.z;
 }
 
 pub fn angle(v_1: PointR3, v_2: PointR3) -> f64 {
