@@ -34,7 +34,7 @@ pub fn panel_output(
     return intensity*area*intensity;
 }
 
-// TODO: not yet implemented
+// Actually unit vector; TODO: not yet implemented
 pub fn angle_sun(
     time: u32,
     day: u16,
@@ -44,11 +44,9 @@ pub fn angle_sun(
 }
 
 // TODO: not yet implemented
-pub fn angle_sun_receiver(
-    time: u32,
-    day: u16,
+pub fn angle_receiver(
     loc: PointS2,
-    angle_receiver: f64
+    angle_roof: f64
 ) -> f64 {
     return 0f64;
 }
